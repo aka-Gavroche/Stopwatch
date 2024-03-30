@@ -1,0 +1,64 @@
+.dark-theme {
+    --body-background: #222831;
+    --logo-box-shadow: 0px 0px 0px #000000;
+    --section-background: #31363F;
+    --section-box-shadow: 0px 0px 10px -1px #000;
+    --display-box-shadow: inset 0px 0px 8px 1px #0c0e10;
+    --font-color: #fff;
+
+    --btn-box-shadow: 0px 0px 8px 1px #121418;
+    --btn-box-shadow-active: 0px 0px 6px 0px #121418;
+
+    --green-btn: #28b028;
+    --green-btn-hover: #229722;
+    --green-btn-active: #1c7e1c;
+
+    --blue-btn: #2c6db4;
+    --blue-btn-hover: #2662a2;
+    --blue-btn-active: #1e5691;
+
+    --turquoise-btn: #008080;
+    --turquoise-btn-hover: #007979;
+    --turquoise-btn-active: #016868;
+
+    --red-btn: #cb3045;
+    --red-btn-hover: #b62c3e;
+    --red-btn-active: #9b2333;
+
+    --violet-btn: #9c29c1;
+    --violet-btn-hover: #8b24ae;
+    --violet-btn-active: #781f95;
+}
+
+.white-theme {
+    --body-background: #6d83d9;
+    --body-background: #9ba6d5;
+    --logo-box-shadow: 0px 0px 2px #000000;
+    --section-background: #baceff;
+    --section-box-shadow: 0px 0px 10px -3px #000;
+    --display-box-shadow: inset 0px 0px 10px -2px #0c0e10;
+    --font-color: #333333;
+
+    --btn-box-shadow: 0px 0px 8px 0px #000;
+    --btn-box-shadow-active: 0px 0px 8px -2px #121418;
+
+    --green-btn: #90ff90;
+    --green-btn-hover: #7eff7e;
+    --green-btn-active: #63e263;
+
+    --blue-btn: #7bbbff;
+    --blue-btn-hover: #60a4ec;
+    --blue-btn-active: #5795d7;
+
+    --turquoise-btn: #8affff;
+    --turquoise-btn-hover: #74f9f9;
+    --turquoise-btn-active: #61e8e8;
+
+    --red-btn: #ff6666;
+    --red-btn-hover: #fc5959;
+    --red-btn-active: #ff4a4a;
+
+    --violet-btn: #e7a0ff;
+    --violet-btn-hover: #e28aff;
+    --violet-btn-active: #d041ff;
+}

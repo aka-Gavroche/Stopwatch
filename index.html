@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG\favicon.ico">
+    <link rel="stylesheet" href="CSS/main-style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div id="themeSwitcher" class="theme-switch">
+        <img src="IMG/day-night.png" alt="img" class="theme-switch__img">
+    </div>
+
+    <div class="container main-wrapper">
+        <!-----HEADER----->
+        <header class="header">
+            <img src="./IMG/logo.png" alt="img" class="header__img">
+            <h1 class="header__title">Stopwatch</h1>
+        </header>
+
+        <!-----MAIN----->
+        <main class="main">
+            <!------TIMER----->
+            <section class="section">
+                <div class="timer">
+                    <div class="timer__display">
+                        <div id="hoursBlock" class="timer__time-block">00</div>
+                        <div class="timer__divider"> : </div>
+                        <div id="minutesBlock" class="timer__time-block">00</div>
+                        <div class="timer__divider"> : </div>
+                        <div id="secondsBlock" class="timer__time-block">00</div>
+                        <div class="timer__divider"> : </div>
+                        <div id="millisecondsBlock" class="timer__time-block">00</div>
+                    </div>
+                    <div class="buttons">
+                        <button class="buttons__btn buttons__btn_green" id="btnStart">Start</button>
+                        <button class="buttons__btn buttons__btn_blue none" id="btnPause">Pause</button>
+                        <button class="buttons__btn buttons__btn_turquoise none" id="btnCircle">Circle</button>
+                        <button class="buttons__btn buttons__btn_red" id="btnReset">Reset</button>
+                    </div>
+                </div>
+            </section>
+
+            <!------CIRCLES----->
+            <section class="section section_small">
+                <div id="circlesBlock" class="circles">
+                </div>
+
+                <div class="buttons">
+                    <button class="buttons__btn buttons__btn_violet" id="btnClear">Clear</button>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-----FOOTER----->
+        <footer class="footer">
+            <div class="footer__copyright">
+                @ a.k.a.Gavroche | 2024 | © All Rights Reserved</div>
+        </footer>
+    </div>
+
+    <script src="JS/page-theme.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

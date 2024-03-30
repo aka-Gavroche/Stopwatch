@@ -1,0 +1,23 @@
+.timer {
+    width: 100%;
+
+    &__display {
+        width: 100%;
+        padding: 20px 10px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+
+        box-shadow: var(--display-box-shadow);
+        border-radius: 8px;
+
+        font-size: min(9vw, 2rem);
+
+        text-align: center;
+    }
+
+    &__time-block {
+        flex: 0 0 min(18%, 50px);
+    }
+}

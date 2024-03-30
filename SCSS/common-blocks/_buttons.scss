@@ -1,0 +1,82 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    column-gap:  min(4vw, 35px);
+    
+    &__btn {
+        // padding: 10px  min(2vw, 20px);
+        padding: 10px 5px;
+        width: 80px; //???
+        
+        font-size: min(4vw, 1rem);
+        font-weight: 600;
+        text-transform: uppercase;
+
+        border-radius: 8px;
+        box-shadow: var(--btn-box-shadow);
+
+        &:active {
+            box-shadow: var(--btn-box-shadow-active);
+        }
+
+        &_green {
+            background-color: var(--green-btn);
+
+            &:hover {
+                background-color: var(--green-btn-hover);
+            }
+
+            &:active {
+                background-color: var(--green-btn-active);
+            }
+        }
+
+        &_blue {
+            background-color: var(--blue-btn);
+
+            &:hover {
+                background-color: var(--blue-btn-hover);
+            }
+
+            &:active {
+                background-color: var(--blue-btn-active);
+            }
+        }
+
+        &_turquoise {
+            background-color: var(--turquoise-btn);
+
+            &:hover {
+                background-color: var(--turquoise-btn-hover);
+            }
+
+            &:active {
+                background-color: var(--turquoise-btn-active);
+            }
+        }
+
+        &_red {
+            background-color: var(--red-btn);
+
+            &:hover {
+                background-color: var(--red-btn-hover);
+            }
+
+            &:active {
+                background-color: var(--red-btn-active);
+            }
+        }
+
+        &_violet {
+            background-color: var(--violet-btn);
+
+            &:hover {
+                background-color: var(--violet-btn-hover);
+            }
+
+            &:active {
+                background-color: var(--violet-btn-active);
+            }
+        }
+    }
+}

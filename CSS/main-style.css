@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/*Файл обнулення стилів за замовчуванням*/
+/*Видаляємо всі відступи і межі*/
+/*Зірочка означає застосування даних параметрів до всіх-всіх тегів html-сторінки*/
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&display=swap");
+* {
+  padding: 0; /*внутрішній відступ*/
+  margin: 0; /*Зовнішній відступ*/
+  border: 0; /*межа-контур*/
+}
+
+/*Згідно зі специфікацією CSS ширина блоку складається з ширини контенту (width), значень відступів (margin), полів (padding) і кордонів (border).*/
+/*Аналогічно йде і з висотою блоку.*/
+/*box-sizing дозволяє змінити цей алгоритм, щоб властивості width і height задавали розміри не контента, а розміри блоку.*/
+/*:before і :after - псевдоелементи, які дають можливість відображати бажаний контент до/після вмісту елемента, до якого він додається.*/
+*, *:before, :after {
+  box-sizing: border-box; /*застосовується для зміни алгоритма розрахунку ширини і висоти елемента*/
+  -moz-box-sizing: border-box; /*Те саме для Firefox*/
+  -webkit-box-sizing: border-box; /*Safari до версії 5.0, Chrome до версії 10.0, Android до версії 4.0 і iOS Safari до версії 5.0*/
+}
+
+/*Видаляємо лінії обводки у деяких браузерів*/
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+/*Робимо вказані нижче теги блочними*/
+nav, footer, header, aside {
+  display: block;
+}
+
+/*Урівнюємо поведінку шрифтів та елементів для різних браузерів*/
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+/*псевдоелемент, котрий видаляє хрестик із форми вводу у браузері Internet Explorer*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+/*Псевдоелемент, котрий видаляє лишні відступи і пропуски у браузері Firefox*/
+/*В даному випадку застосований до кнопки*/
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.dark-theme {
+  --body-background: #222831;
+  --logo-box-shadow: 0px 0px 0px #000000;
+  --section-background: #31363F;
+  --section-box-shadow: 0px 0px 10px -1px #000;
+  --display-box-shadow: inset 0px 0px 8px 1px #0c0e10;
+  --font-color: #fff;
+  --btn-box-shadow: 0px 0px 8px 1px #121418;
+  --btn-box-shadow-active: 0px 0px 6px 0px #121418;
+  --green-btn: #28b028;
+  --green-btn-hover: #229722;
+  --green-btn-active: #1c7e1c;
+  --blue-btn: #2c6db4;
+  --blue-btn-hover: #2662a2;
+  --blue-btn-active: #1e5691;
+  --turquoise-btn: #008080;
+  --turquoise-btn-hover: #007979;
+  --turquoise-btn-active: #016868;
+  --red-btn: #cb3045;
+  --red-btn-hover: #b62c3e;
+  --red-btn-active: #9b2333;
+  --violet-btn: #9c29c1;
+  --violet-btn-hover: #8b24ae;
+  --violet-btn-active: #781f95;
+}
+
+.white-theme {
+  --body-background: #6d83d9;
+  --body-background: #9ba6d5;
+  --logo-box-shadow: 0px 0px 2px #000000;
+  --section-background: #baceff;
+  --section-box-shadow: 0px 0px 10px -3px #000;
+  --display-box-shadow: inset 0px 0px 10px -2px #0c0e10;
+  --font-color: #333333;
+  --btn-box-shadow: 0px 0px 8px 0px #000;
+  --btn-box-shadow-active: 0px 0px 8px -2px #121418;
+  --green-btn: #90ff90;
+  --green-btn-hover: #7eff7e;
+  --green-btn-active: #63e263;
+  --blue-btn: #7bbbff;
+  --blue-btn-hover: #60a4ec;
+  --blue-btn-active: #5795d7;
+  --turquoise-btn: #8affff;
+  --turquoise-btn-hover: #74f9f9;
+  --turquoise-btn-active: #61e8e8;
+  --red-btn: #ff6666;
+  --red-btn-hover: #fc5959;
+  --red-btn-active: #ff4a4a;
+  --violet-btn: #e7a0ff;
+  --violet-btn-hover: #e28aff;
+  --violet-btn-active: #d041ff;
+}
+
+body {
+  font-family: "Scada", sans-serif;
+  background-color: var(--body-background);
+  color: var(--font-color);
+  min-height: 100%;
+}
+
+.none {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: min(4vw, 35px);
+}
+.buttons__btn {
+  padding: 10px 5px;
+  width: 80px;
+  font-size: min(4vw, 1rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  box-shadow: var(--btn-box-shadow);
+}
+.buttons__btn:active {
+  box-shadow: var(--btn-box-shadow-active);
+}
+.buttons__btn_green {
+  background-color: var(--green-btn);
+}
+.buttons__btn_green:hover {
+  background-color: var(--green-btn-hover);
+}
+.buttons__btn_green:active {
+  background-color: var(--green-btn-active);
+}
+.buttons__btn_blue {
+  background-color: var(--blue-btn);
+}
+.buttons__btn_blue:hover {
+  background-color: var(--blue-btn-hover);
+}
+.buttons__btn_blue:active {
+  background-color: var(--blue-btn-active);
+}
+.buttons__btn_turquoise {
+  background-color: var(--turquoise-btn);
+}
+.buttons__btn_turquoise:hover {
+  background-color: var(--turquoise-btn-hover);
+}
+.buttons__btn_turquoise:active {
+  background-color: var(--turquoise-btn-active);
+}
+.buttons__btn_red {
+  background-color: var(--red-btn);
+}
+.buttons__btn_red:hover {
+  background-color: var(--red-btn-hover);
+}
+.buttons__btn_red:active {
+  background-color: var(--red-btn-active);
+}
+.buttons__btn_violet {
+  background-color: var(--violet-btn);
+}
+.buttons__btn_violet:hover {
+  background-color: var(--violet-btn-hover);
+}
+.buttons__btn_violet:active {
+  background-color: var(--violet-btn-active);
+}
+
+.theme-switch {
+  position: absolute;
+  top: min(2vw, 25px);
+  right: min(2vw, 25px);
+}
+.theme-switch__img {
+  width: min(10vw, 50px);
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 3px #000);
+  transition: all 0.05s ease-in;
+}
+.theme-switch__img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.theme-switch__img:active {
+  scale: 0.9;
+  filter: drop-shadow(0px 0px 1px #000);
+}
+
+.header {
+  padding: 25px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  column-gap: 5px;
+}
+.header__img {
+  width: min(15.625vw, 70px);
+  filter: drop-shadow(var(--logo-box-shadow));
+  object-fit: cover;
+}
+.header__title {
+  font-size: min(10vw, 3rem);
+  font-weight: 600;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+}
+
+.main-wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.section {
+  width: min(100%, 700px);
+  padding: 30px min(4vw, 25px);
+  box-shadow: var(--section-box-shadow);
+  border-radius: 8px;
+  background-color: var(--section-background);
+}
+.section_small {
+  width: min(100%, 400px);
+}
+
+.timer {
+  width: 100%;
+}
+.timer__display {
+  width: 100%;
+  padding: 20px 10px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  box-shadow: var(--display-box-shadow);
+  border-radius: 8px;
+  font-size: min(9vw, 2rem);
+  text-align: center;
+}
+.timer__time-block {
+  flex: 0 0 min(18%, 50px);
+}
+
+.circles {
+  width: 100%;
+  min-height: 150px;
+  max-height: 275px;
+  overflow: auto;
+  padding: 10px 10px 15px;
+  margin-bottom: 25px;
+  box-shadow: var(--display-box-shadow);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.circles__item {
+  width: 100%;
+  padding: 10px 0;
+  font-size: min(7vw, 1.75rem);
+  border-bottom: 1px solid #000;
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+}
+.circles__index {
+  width: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.footer {
+  padding: 25px 0;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: min(4vw, 1rem);
+}/*# sourceMappingURL=main-style.css.map */
